@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Register Page</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Register - Chat App</h1>
+    <div class="container">
+        <form action="/register/" method="POST">
+            Username:
+            <input type="text" name="username" id="username">
+            <br>
+            Email:
+            <input type = "text" name = "email" id = "email">
+            <br>
+            Password:
+            <input type="text" name="password" id="password">
+            <br>
+            Retype Password:
+            <input type="text" name="retype" id="retype">
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+{% endblock %}

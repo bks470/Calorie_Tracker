@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    Your Profile!- Chat App Logged in as {{ user.user }}.
+    <br>
+    <br>
+    <a href = "/logout/">click here to logout</a>
+
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1><b>User: {{ user.user }}</b></h1>
+        <form enterChat="/profile/{{ user }}" method = "POST">
+            <p>Type your message here:</p>
+            <input type="text" name="message" id="message" class="message_input">
+            <input type="hidden" value={{ user.user }} id="author">
+            <br>
+            <input type="submit" value="Send" id="send_button" class="send_button">
+        </form>
+        <br>
+        <form action="/profile/{{ user }}" method="GET">
+            <textarea id="chat_window" class="chat_window" readonly></textarea>
+
+        </form>
+    </div>
+{% endblock %}

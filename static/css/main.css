@@ -1,0 +1,31 @@
+body {
+    margin-top: 25px;
+    color: black;
+}
+
+h1 {
+	color: black;
+	margin-top: 25px;
+}
+
+.send_button{
+    color: black;
+}
+
+.message_input{
+    width: 500px;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+
+.chat_window {
+    width: 500px;
+    height: 500px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
